@@ -1,5 +1,72 @@
-/*
-  Override default refinery homepage styles here.
-  These only apply to the homepage of your site.
-*/
+#linkdesign{
+  height: 80px;
+  width: 283px;
+  background-image:url("../images/link-design.png");
+}
+
+#linkdesign:hover{
+  height: 80px;
+  width: 288px;
+  background-image:url("../images/link-design-s.png");
+}
+
+#linkdev{
+  margin-top: 12px;
+  height: 80px;
+  width: 552px;
+  background-image:url("../images/link-dev.png");
+}
+
+#linkdev:hover{
+  margin-top: 12px;
+  height: 80px;
+  width: 554px;
+  background-image:url("../images/link-dev-s.png");
+}
+
+#linkaudiovideo{
+  margin-top: 12px;
+  height: 80px;
+  width: 460px;
+  background-image:url("../images/link-audiovideo.png");
+}
+
+#linkaudiovideo:hover{
+  margin-top: 12px;
+  height: 80px;
+  width: 502px;
+  background-image:url("../images/link-audiovideo-s.png");
+}
+
+#linkpoetry{
+  margin-top: 12px;
+  height: 80px;
+  width: 275px;
+  background-image:url("../images/link-poetry.png");
+}
+
+#linkpoetry:hover{
+  margin-top: 12px;
+  height: 80px;
+  width: 265px;
+  background-image:url("../images/link-poetry-s.png");
+}
+
+#linkabout{
+  margin-top: 12px;
+  height: 80px;
+  width: 287px;
+  background-image:url("../images/link-about.png");
+}
+
+#linkabout:hover{
+  margin-top: 12px;
+  height: 80px;
+  width: 297px;
+  background-image:url("../images/link-about-s.png");
+}
+
+#page_title{
+  margin-top: 42px;
+}
 

@@ -1,37 +1,59 @@
 body {
-	font:italic 14px/1.5em Verdana, Arial, Serif;
+	font: 12px Verdana;
 	background-color:#FF0000;
 }
 
-#font_format {
-    	font: 12px Verdana;
-}
-
 h1 {
-    color:#F59C40;
+    color:#FF0000;
+    font: 32px Verdana;
 }
 
 #container {
-
     position: relative;
     width: 1024px;
     z-index: 0;
     margin-left: auto; margin-right: auto; margin-top: auto;
     height: 667px;
     background:url("../images/background.png") no-repeat;
+
     background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     -khtml-background-size: 100% 100%;
 }
 
-#topo{
-  height: 15%;
-  width:100%;
+#top{
+  height: 70px;
+  width:1004px;
   z-index: 1;
+  padding-top: 20px;
+  padding-left: 20px;
 }
 
-#lateraldireita{
+#title{
+  height: 52px;
+  width: 255px;
+  background:url("../images/title.png") no-repeat;
+
+  background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  -khtml-background-size: 100% 100%;
+}
+
+#subtitle{
+  height: 29px;
+  width: 130px;
+  background:url("../images/subtitle.png") no-repeat;
+  margin-top: -32px;
+  margin-left: 660px;
+  background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  -khtml-background-size: 100% 100%;
+}
+
+#sidebar{
   width:19.5%;
   float:right;
   overflow:auto;
@@ -41,28 +63,79 @@ h1 {
   padding: 1px;
 }
 
-#imagemdireita{
-  margin-top:40px;
-  height: 50px;
-  background:url("../images/fundolateraldireita.png") no-repeat;
-  background-size: 100% 100%;
+#blogbutton1{
+  height: 120px;
+  width: 120px;
+  background-image:url("../images/sidebar-blog1.png");
+/* background:url("../images/sidebar-blog1.png") no-repeat;
+   background-size: 100% 100%;
   -moz-background-size: 100% 100%;
   -o-background-size: 100% 100%;
-  -khtml-background-size: 100% 100%;
+  -khtml-background-size: 100% 100%;*/
+}
+
+#blogbutton1:hover{
+  height: 120px;
+  width: 120px;
+  background-image:url("../images/sidebar-blog1-s.png");
+}
+
+#blogbutton2{
+  height: 120px;
+  width: 120px;
+  margin-top:20px;
+  background-image:url("../images/sidebar-blog2.png");
+}
+
+#blogbutton2:hover{
+  height: 120px;
+  width: 120px;
+  margin-top:20px;
+  background-image:url("../images/sidebar-blog2-s.png");
+}
+
+#contactbutton{
+  height: 120px;
+  width: 120px;
+  margin-top:20px;
+  background-image:url("../images/sidebar-contact.png");
+}
+
+#contactbutton:hover{
+  height: 120px;
+  width: 120px;
+  margin-top:20px;
+  background-image:url("../images/sidebar-contact-s.png");
+}
+
+#blogrollbutton{
+  height: 120px;
+  width: 120px;
+  margin-top:20px;
+  background-image:url("../images/sidebar-blogroll.png");
+}
+
+#blogrollbutton:hover{
+  height: 120px;
+  width: 120px;
+  margin-top:20px;
+  background-image:url("../images/sidebar-blogroll-s.png");
 }
 
 #content{
   background-color: #FF0000;
-  width:80%;
-  height:85%;
+  width:78%;
+  height:83%;
   overflow:auto;
   position:relative;
   background-color:#FFFFFF;
   text-align:justify;
   z-index: 3;
   background:url("../images/content.png") no-repeat;
+  padding-top:20px;
+  padding-left:20px;
 
-  *margin-top:-35%;
+  /**margin-top:-35%;
   *margin-left: 16%;
   *padding: -35% 50% 50% 50%;
   *width:58%;
@@ -71,7 +144,7 @@ h1 {
   *background-color:#FFFFFF;
   *text-align:justify;
   *z-index: 3;
-  *background:url("../images/content_ie.png") no-repeat;
+  *background:url("../images/content_ie.png") no-repeat;*/
 
   background-size: 100% 100%;
   -moz-background-size: 100% 100%;
@@ -79,7 +152,7 @@ h1 {
   -khtml-background-size: 100% 100%;
 }
 
-#rodape{
+#bottom{
     width:100%;
     height:2%;
     position:relative;
@@ -88,32 +161,6 @@ h1 {
     color:#FFFFFF;
     z-index: 2;
     text-align:center;
-}
-
-#botao_workshops{
- background:url("../images/botao_workshops.png") no-repeat;
-  width:200px;
-  height:40px;
-  position:relative;
-  margin-left:500px;
-  top:28px;
-
-  -moz-background-size:  140px 25px;
-  -o-background-size:  140px 25px;
-  -khtml-background-size:  140px 25px;
-}
-
-#botao_workshops:hover{
- background:url("../images/workshop-selecionado.png") no-repeat;
-  width:200px;
-  height:40px;
-  position:relative;
-  margin-left:495px;
-  top:25px;
-
-  -moz-background-size:  160px 30px;
-  -o-background-size:  160px 30px;
-  -khtml-background-size:  160px 30px;
 }
 
 /*Tabela*/
