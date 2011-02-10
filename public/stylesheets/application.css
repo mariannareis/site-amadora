@@ -110,8 +110,8 @@ h1 {
 
 #content{
   background-color: #FF0000;
-  width:78%;
-  height:83%;
+  width:780px;
+  height:542px;
   overflow:auto;
   position:relative;
   background-color:#FFFFFF;
@@ -120,7 +120,7 @@ h1 {
   background-image:url("../images/content.png");
   padding-top:20px;
   padding-left:20px;
-
+  padding-right:20px;
   /**margin-top:-35%;
   *margin-left: 16%;
   *padding: -35% 50% 50% 50%;
@@ -131,17 +131,11 @@ h1 {
   *text-align:justify;
   *z-index: 3;
   *background:url("../images/content_ie.png") no-repeat;*/
-
-  background-size: 100% 100%;
-  -moz-background-size: 100% 100%;
-  -o-background-size: 100% 100%;
-  -khtml-background-size: 100% 100%;
 }
 
 #bottom{
-    margin-top: -1px;
     width:100%;
-    height:2.5%;
+    height:21px;
     position:relative;
     background-color:#CD0000;
     color:#FFFFFF;
