@@ -5,7 +5,20 @@ body {
 
 h1 {
     color:#CD0000;
+    font: 0px Verdana;
+}
+
+.main_title {
+    color:#CD0000;
     font: 32px Verdana;
+    margin-top: 60px;
+}
+
+.pages_title {
+    color:#CD0000;
+    font: 32px Verdana;
+    position: absolute; /* posiciona em relação um canto superior esquerdo da tela */
+    top: 470px; /* posiciona a 70px para baixo */
 }
 
 #container {
@@ -20,7 +33,7 @@ h1 {
 #space_{
     height: 120px;
     width: 120px;
-    margin-top: 8px;
+    margin-top: 20px;
 }
 
 
@@ -42,6 +55,7 @@ h1 {
 
 #sidebar{
   width:200px;
+  height:100%;
   float:right;
   overflow:auto;
   position:relative;
