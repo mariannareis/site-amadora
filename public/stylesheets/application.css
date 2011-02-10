@@ -1,25 +1,20 @@
 body {
 	font: 12px Verdana;
-	background-color:#FF0000;
+	background-color:#EEE9E9;
 }
 
 h1 {
-    color:#FF0000;
+    color:#CD0000;
     font: 32px Verdana;
 }
 
 #container {
     position: relative;
     width: 1024px;
+    height: 667px;
     z-index: 0;
     margin-left: auto; margin-right: auto; margin-top: auto;
-    height: 667px;
-    background:url("../images/background.png") no-repeat;
-
-    background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    -khtml-background-size: 100% 100%;
+    background-image:url("../images/background.png");
 }
 
 #top{
@@ -33,24 +28,15 @@ h1 {
 #title{
   height: 52px;
   width: 255px;
-  background:url("../images/title.png") no-repeat;
-
-  background-size: 100% 100%;
-  -moz-background-size: 100% 100%;
-  -o-background-size: 100% 100%;
-  -khtml-background-size: 100% 100%;
+  background-image:url("../images/title.png");
 }
 
 #subtitle{
   height: 29px;
-  width: 130px;
-  background:url("../images/subtitle.png") no-repeat;
+  width: 106px;
+  background-image:url("../images/subtitle.png");
   margin-top: -32px;
   margin-left: 660px;
-  background-size: 100% 100%;
-  -moz-background-size: 100% 100%;
-  -o-background-size: 100% 100%;
-  -khtml-background-size: 100% 100%;
 }
 
 #sidebar{
@@ -153,11 +139,11 @@ h1 {
 }
 
 #bottom{
+    margin-top: -1px;
     width:100%;
     height:2.5%;
     position:relative;
-    float:bottom;
-    background-color:#000000;
+    background-color:#CD0000;
     color:#FFFFFF;
     z-index: 2;
     text-align:center;
@@ -172,7 +158,6 @@ table.list thead th {
 	font-size:12px;
 	font-weight:normal;
 	padding:0pt 3px 3px;
-	text-transform:bold;
 }
 
 table.list thead th a { color: #F99F43; }
