@@ -49,65 +49,6 @@ h1 {
   padding: 1px;
 }
 
-#blogbutton1{
-  height: 120px;
-  width: 120px;
-  background-image:url("../images/sidebar-blog1.png");
-/* background:url("../images/sidebar-blog1.png") no-repeat;
-   background-size: 100% 100%;
-  -moz-background-size: 100% 100%;
-  -o-background-size: 100% 100%;
-  -khtml-background-size: 100% 100%;*/
-}
-
-#blogbutton1:hover{
-  height: 120px;
-  width: 120px;
-  background-image:url("../images/sidebar-blog1-s.png");
-}
-
-#blogbutton2{
-  height: 120px;
-  width: 120px;
-  margin-top:20px;
-  background-image:url("../images/sidebar-blog2.png");
-}
-
-#blogbutton2:hover{
-  height: 120px;
-  width: 120px;
-  margin-top:20px;
-  background-image:url("../images/sidebar-blog2-s.png");
-}
-
-#contactbutton{
-  height: 120px;
-  width: 120px;
-  margin-top:20px;
-  background-image:url("../images/sidebar-contact.png");
-}
-
-#contactbutton:hover{
-  height: 120px;
-  width: 120px;
-  margin-top:20px;
-  background-image:url("../images/sidebar-contact-s.png");
-}
-
-#blogrollbutton{
-  height: 120px;
-  width: 120px;
-  margin-top:20px;
-  background-image:url("../images/sidebar-blogroll.png");
-}
-
-#blogrollbutton:hover{
-  height: 120px;
-  width: 120px;
-  margin-top:20px;
-  background-image:url("../images/sidebar-blogroll-s.png");
-}
-
 #content{
   background-color: #FF0000;
   width:780px;
