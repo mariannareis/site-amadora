@@ -117,7 +117,7 @@ h1 {
   background-color:#FFFFFF;
   text-align:justify;
   z-index: 3;
-  background:url("../images/content.png") no-repeat;
+  background-image:url("../images/content.png");
   padding-top:20px;
   padding-left:20px;
 
