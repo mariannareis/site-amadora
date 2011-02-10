@@ -1,69 +1,30 @@
 #linkdesign{
   height: 70px;
   width: 248px;
-  background-image:url("../images/link-design.png");
-}
-
-#linkdesign:hover{
-  height: 70px;
-  width: 252px;
-  background-image:url("../images/link-design-s.png");
 }
 
 #linkdev{
   margin-top: 16px;
   height: 70px;
   width: 483px;
-  background-image:url("../images/link-dev.png");
-}
-
-#linkdev:hover{
-  margin-top: 16px;
-  height: 70px;
-  width: 485px;
-  background-image:url("../images/link-dev-s.png");
 }
 
 #linkaudiovideo{
   margin-top: 16px;
   height: 70px;
   width: 403px;
-  background-image:url("../images/link-audiovideo.png");
-}
-
-#linkaudiovideo:hover{
-  margin-top: 16px;
-  height: 70px;
-  width: 443px;
-  background-image:url("../images/link-audiovideo-s.png");
 }
 
 #linkpoetry{
   margin-top: 16px;
   height: 70px;
   width: 242px;
-  background-image:url("../images/link-poetry.png");
-}
-
-#linkpoetry:hover{
-  margin-top: 16px;
-  height: 70px;
-  width: 232px;
-  background-image:url("../images/link-poetry-s.png");
 }
 
 #linkabout{
   margin-top: 16px;
   height: 70px;
   width: 251px;
-  background-image:url("../images/link-about.png");
-}
-
-#linkabout:hover{
-  margin-top: 16px;
-  height: 70px;
-  width: 260px;
-  background-image:url("../images/link-about-s.png");
 }
 
 #page_title{

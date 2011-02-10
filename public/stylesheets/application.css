@@ -25,12 +25,6 @@ h1 {
   padding-left: 20px;
 }
 
-#title{
-  height: 52px;
-  width: 255px;
-  background-image:url("../images/title.png");
-}
-
 #subtitle{
   height: 29px;
   width: 106px;
