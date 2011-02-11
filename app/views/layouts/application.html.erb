@@ -5,12 +5,40 @@
     <link rel="shortcut icon" href="/favicon.ico" />
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
     <title>Am(a)dora - fall in love! </title>
-    <%= stylesheet_link_tag 'application' %>
+    <%= stylesheet_link_tag :all %>
+    <%= csrf_meta_tag %>
     <%#= javascript_include_tag 'prototype' %>
-    <%= stylesheet_link_tag 'home' %>
+    <%= javascript_include_tag 'jquery/jquery-1.5.min' %>
+    <%= javascript_include_tag :all, :cache => true %>
+
+<script src='http://www.google.com/jsapi'/>
+<script>
+google.load(&quot;jquery&quot;, &quot;1.3.2&quot;);
+</script>
+<script type='text/javascript'>
+jQuery(function()
+{
+  jQuery("#menusisi a").stop().animate({"marginLeft":"-50px"},1000);
+  jQuery("#menusisi a, li").hover
+  (
+    function ()
+    {
+      jQuery("a",jQuery(this)).stop().animate({"marginLeft":"-2px"},200);
+    },
+    function ()
+    {
+      jQuery("a",jQuery(this)).stop().animate({"marginLeft":"-50px"},200);
+    }
+  );
+});
+
+</script>
+
+
   </head>
 
   <body>
+
     <div id="container">
       <div id="top"> <a href="/">  <img src="../images/title.png" border="0" alt="blog pessoal" /> </a>
         <div id="subtitle" > </div>
@@ -33,7 +61,6 @@
         <% else %>
         <h2 class="main_title">  <%= "Menu" %> </h2>
         <% end %>
-
       </div>
 
       <div id="bottom">
@@ -55,6 +82,7 @@
         </div>
       </div>
     </div>
+
   </body>
 </html>
 

@@ -1,3 +1,54 @@
+ul#menusisi {
+    color:#CD0000;
+    font: 12px Verdana;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    list-style:none;
+    z-index:9999;
+}
+
+ul#menusisi li a {
+display:block;
+margin-left:-50px;
+width:100px;
+height:55px;
+background-repeat:no-repeat;
+background-position:48px center;
+opacity:0.8;
+}
+
+ul#menusisi .delicious a {
+background-image:url("../images/icone_delicious.png");
+}
+
+ul#menusisi .twitter a {
+background-image:url(../images/icone_twitter.png);
+}
+ul#menusisi .feeds a {
+background-image:url(../images/icone_feeds.png);
+}
+
+ul#menusisi .skype a {
+background-image:url("../images/icone_skype.png");
+}
+
+ul#menusisi .flickr a {
+background-image:url("../images/icone_flickr.png");
+}
+
+ul#menusisi .github a {
+background-image:url("../images/icone_github.png");
+}
+
+ul#menusisi .tumblr a {
+background-image:url("../images/icone_tumblr.png");
+}
+
+ul#menusisi .wordpress a {
+background-image:url("../images/icone_wordpress.png");
+}
+
 body {
 	font: 12px Verdana;
 	background-color:#EEE9E9;
@@ -35,7 +86,6 @@ h1 {
     width: 120px;
     margin-top: 20px;
 }
-
 
 #top{
   height: 70px;
