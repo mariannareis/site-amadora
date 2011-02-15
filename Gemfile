@@ -62,7 +62,7 @@ end
 
 
 # Specify additional Refinery CMS Engines here (all optional):
-gem 'refinerycms-portfolio', '~> 0.9.9'
+gem 'refinerycms-generators',   '~> 0.9'
 # gem 'refinerycms-inquiries',    '~> 0.9.9.9'
 # gem 'refinerycms-news',         '~> 1.0'
 # gem 'refinerycms-portfolio',    '~> 0.9.9'
