@@ -136,6 +136,8 @@ GEM
     refinerycms-i18n (0.9.9.7)
       refinerycms (>= 0.9.8)
       routing-filter (>= 0.2.3)
+    refinerycms-portfolio (0.9.9)
+      refinerycms (>= 0.9.8)
     routing-filter (0.2.3)
       actionpack
     rspec (2.3.0)
@@ -193,6 +195,7 @@ DEPENDENCIES
   refinerycms (= 0.9.9)
   refinerycms-generators (~> 0.9)
   refinerycms-i18n (~> 0.9)
+  refinerycms-portfolio (~> 0.9.9)
   rspec-rails (= 2.3)
   ruby-prof
   spork
