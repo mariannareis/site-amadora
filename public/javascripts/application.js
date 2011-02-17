@@ -1,2 +1,1 @@
-jQuery.noConflict()
-
+jQuery.noConflict();

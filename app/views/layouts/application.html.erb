@@ -5,16 +5,16 @@
     <link rel="shortcut icon" href="/favicon.ico" />
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
     <title>Am(a)dora - fall in love! </title>
-    <%= stylesheet_link_tag :all %>
+    <%= stylesheet_link_tag "application" %>
     <%= csrf_meta_tag %>
     <%#= javascript_include_tag 'prototype' %>
     <%= javascript_include_tag 'jquery/jquery-1.5.min' %>
     <%#= javascript_include_tag :all, :cache => true %>
 
-<script src='http://www.google.com/jsapi'/>
+<!--script src='http://www.google.com/jsapi'/>
 <script>
 google.load(&quot;jquery&quot;, &quot;1.3.2&quot;);
-</script>
+</script-->
 <script type='text/javascript'>
 jQuery(function()
 {
@@ -47,9 +47,9 @@ jQuery(function()
       <div id="sidebar">
         <center>
           <a href="http://mariounaum.tumblr.com" target="_blank" >    <img src="../images/sidebar-blog1.png" onmouseover="this.src='../images/sidebar-blog1-s.png'" onmouseout="this.src='../images/sidebar-blog1.png'" border="0" alt="blog pessoal" /> </a>
-          <div id="space_"> <a class="blogbutton2" target="_blank" href="http://tecnounao.wordpress.com">   <img src="../images/sidebar-blog2.png" onmouseover="this.src='../images/sidebar-blog2-s.png'" onmouseout="this.src='../images/sidebar-blog2.png'" border="0" alt="blog tecnounao" />  </a></div>
-           <div id="space_"> <a class="contactbutton" href="/contact">                                       <img src="../images/sidebar-contact.png" onmouseover="this.src='../images/sidebar-contact-s.png'" onmouseout="this.src='../images/sidebar-contact.png'" border="0" alt="contact" /> </a> </div>
-           <div id="space_"> <a class="blogrollbutton" href="/blogroll">                                     <img src="../images/sidebar-blogroll.png" onmouseover="this.src='../images/sidebar-blogroll-s.png'" onmouseout="this.src='../images/sidebar-blogroll.png'" border="0" alt="blogroll" />  </a> </div>
+          <div class="space_"> <a class="blogbutton2" target="_blank" href="http://tecnounao.wordpress.com">   <img src="../images/sidebar-blog2.png" onmouseover="this.src='../images/sidebar-blog2-s.png'" onmouseout="this.src='../images/sidebar-blog2.png'" border="0" alt="blog tecnounao" />  </a></div>
+           <div class="space_"> <a class="contactbutton" href="/contact">                                       <img src="../images/sidebar-contact.png" onmouseover="this.src='../images/sidebar-contact-s.png'" onmouseout="this.src='../images/sidebar-contact.png'" border="0" alt="contact" /> </a> </div>
+           <div class="space_"> <a class="blogrollbutton" href="/blogroll">                                     <img src="../images/sidebar-blogroll.png" onmouseover="this.src='../images/sidebar-blogroll-s.png'" onmouseout="this.src='../images/sidebar-blogroll.png'" border="0" alt="blogroll" />  </a> </div>
         </center>
       </div>
 
@@ -75,9 +75,8 @@ jQuery(function()
             alt="CSS válido!" />
           </a>
 
-          <font size="1px"> Você pode quase tudo (veja a licença):
+          <font size="1px"> CC - Copie com Carinho! (veja a licença):
             <a target="_blank" rel="license" href="http://creativecommons.org/licenses/by-nc/2.5/br/"><img alt="licença creative commons" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/2.5/br/80x15.png" /></a>
-            Melhor visualizado em tela cheia - F11
           </font>
         </div>
       </div>
