@@ -47,8 +47,6 @@ jQuery(function()
 </script>
 
 
-
-
   </head>
 
   <body>
@@ -67,36 +65,33 @@ jQuery(function()
         </center>
       </div>
 
-      <div id="content">
-        <%= yield %>
+     <div id="content2">
+        <div id="linkdesign" >
+           <a href="/design">   <img src="../images/link-design.png" onmouseover="this.src='../images/link-design-s.png'" onmouseout="this.src='../images/link-design.png'" border="0" alt="blog tecnounao" />  </a>
+        </div>
 
-<div id="linkdesign" >
-   <a href="/design">   <img src="../images/link-design.png" onmouseover="this.src='../images/link-design-s.png'" onmouseout="this.src='../images/link-design.png'" border="0" alt="blog tecnounao" />  </a>
-</div>
+        <div id="linkdev" >
+           <a href="/dev">   <img src="../images/link-dev.png" onmouseover="this.src='../images/link-dev-s.png'" onmouseout="this.src='../images/link-dev.png'" border="0" alt="blog tecnounao" />  </a>
+        </div>
 
-<div id="linkdev" >
-   <a href="/dev">   <img src="../images/link-dev.png" onmouseover="this.src='../images/link-dev-s.png'" onmouseout="this.src='../images/link-dev.png'" border="0" alt="blog tecnounao" />  </a>
-</div>
+        <div id="linkaudiovideo" >
+           <a href="/audiovideo">   <img src="../images/link-audiovideo.png" onmouseover="this.src='../images/link-audiovideo-s.png'" onmouseout="this.src='../images/link-audiovideo.png'" border="0" alt="blog tecnounao" />  </a>
+        </div>
 
-<div id="linkaudiovideo" >
-   <a href="/audiovideo">   <img src="../images/link-audiovideo.png" onmouseover="this.src='../images/link-audiovideo-s.png'" onmouseout="this.src='../images/link-audiovideo.png'" border="0" alt="blog tecnounao" />  </a>
-</div>
+        <div id="linktexts" >
+           <a href="/texts">   <img src="../images/link-texts.png" onmouseover="this.src='../images/link-texts-s.png'" onmouseout="this.src='../images/link-texts.png'" border="0" alt="blog tecnounao" />  </a>
+        </div>
 
-<div id="linktexts" >
-   <a href="/texts">   <img src="../images/link-texts.png" onmouseover="this.src='../images/link-texts-s.png'" onmouseout="this.src='../images/link-texts.png'" border="0" alt="blog tecnounao" />  </a>
-</div>
+        <div id="linkabout" >
+           <a href="/about">   <img src="../images/link-about.png" onmouseover="this.src='../images/link-about-s.png'" onmouseout="this.src='../images/link-about.png'" border="0" alt="blog tecnounao" />  </a>
+        </div>
 
-<div id="linkabout" >
-   <a href="/about">   <img src="../images/link-about.png" onmouseover="this.src='../images/link-about-s.png'" onmouseout="this.src='../images/link-about.png'" border="0" alt="blog tecnounao" />  </a>
-</div>
-
-        <% if (page_title.to_s != "Am(a)dora") and (page_title.to_s != "Home") %>
          <h2 class="pages_title"> <%= page_title %> </h2>
-        <% else %>
-        <h2 class="main_title">  <%= "Menu" %> </h2>
-        <% end %>
       </div>
 
+      <div id="content">
+        <%= yield %>
+      </div>
 
       <div id="bottom">
         <div align="center">
@@ -107,7 +102,11 @@ jQuery(function()
             <a target="_blank" rel="license" href="http://creativecommons.org/licenses/by-nc/2.5/br/">  (veja mais) </a>
         </div>
       </div>
-    </div>
+
+
+
+
+
 
   </body>
 </html>
