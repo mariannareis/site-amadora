@@ -49,7 +49,8 @@ jQuery(function()
 
   </head>
 
-  <body>
+<body>
+  <div id=limit>
 
     <div id="container">
       <div id="top"> <a href="/">  <img src="../images/title.png" border="0" alt="blog pessoal" /> </a>
@@ -67,23 +68,23 @@ jQuery(function()
 
      <div id="content2">
         <div id="linkdesign" >
-           <a href="/design">   <img src="../images/link-design.png" onmouseover="this.src='../images/link-design-s.png'" onmouseout="this.src='../images/link-design.png'" border="0" alt="blog tecnounao" />  </a>
+           <a href="/design">   <img src="../images/link-design.png" border="0" alt="DESIGN" />  </a>
         </div>
 
         <div id="linkdev" >
-           <a href="/dev">   <img src="../images/link-dev.png" onmouseover="this.src='../images/link-dev-s.png'" onmouseout="this.src='../images/link-dev.png'" border="0" alt="blog tecnounao" />  </a>
+           <a href="/dev">   <img src="../images/link-dev.png" border="0" alt="DESENVOLVIMENTO" />  </a>
         </div>
 
         <div id="linkaudiovideo" >
-           <a href="/audiovideo">   <img src="../images/link-audiovideo.png" onmouseover="this.src='../images/link-audiovideo-s.png'" onmouseout="this.src='../images/link-audiovideo.png'" border="0" alt="blog tecnounao" />  </a>
+           <a href="/audiovideo">   <img src="../images/link-audiovideo.png" border="0" alt="AUDIO E VÍDEO" />  </a>
         </div>
 
         <div id="linktexts" >
-           <a href="/texts">   <img src="../images/link-texts.png" onmouseover="this.src='../images/link-texts-s.png'" onmouseout="this.src='../images/link-texts.png'" border="0" alt="blog tecnounao" />  </a>
+           <a href="/texts">   <img src="../images/link-texts.png" onmouseover="this.src='../images/link-texts-s.png'" onmouseout="this.src='../images/link-texts.png'" border="0" alt="ESCRITOS" />  </a>
         </div>
 
         <div id="linkabout" >
-           <a href="/about">   <img src="../images/link-about.png" onmouseover="this.src='../images/link-about-s.png'" onmouseout="this.src='../images/link-about.png'" border="0" alt="blog tecnounao" />  </a>
+           <a href="/about">   <img src="../images/link-about.png" onmouseover="this.src='../images/link-about-s.png'" onmouseout="this.src='../images/link-about.png'" border="0" alt="PUM" />  </a>
         </div>
 
          <h2 class="pages_title"> <%= page_title %> </h2>
@@ -92,9 +93,10 @@ jQuery(function()
       <div id="content">
         <%= yield %>
       </div>
+</div>
 
       <div id="bottom">
-        <div align="center">
+        <div id='texts' align="center">
           <a href="http://validator.w3.org/check?uri=referer"> XHTML Válido</a> &nbsp; &nbsp; - &nbsp; &nbsp;
 
           <a href="http://jigsaw.w3.org/css-validator/check/referer"> CSS Válido</a> &nbsp; &nbsp; - &nbsp; &nbsp;
@@ -102,11 +104,6 @@ jQuery(function()
             <a target="_blank" rel="license" href="http://creativecommons.org/licenses/by-nc/2.5/br/">  (veja mais) </a>
         </div>
       </div>
-
-
-
-
-
 
   </body>
 </html>

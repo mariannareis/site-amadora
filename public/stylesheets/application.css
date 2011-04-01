@@ -22,6 +22,12 @@ background:url("../images/content.png");
 padding-left:40px;
 padding-right:40px;
 padding-bottom:20px;
+border: 30px solid #black;
+-moz-border-radius: 20px;
+-khtml-border-radius: 20px;
+-webkit-border-radius: 20px;
+border-radius: 20px;
+margin-top:10px;
 }
 
 #content2{
@@ -33,6 +39,11 @@ z-index:3;
 background:url("../images/content-menu.png") no-repeat;
 padding-left:20px;
 padding-right:20px;
+border: 30px solid #black;
+-moz-border-radius: 20px;
+-khtml-border-radius: 20px;
+-webkit-border-radius: 20px;
+border-radius: 20px;
 }
 
 #container{
@@ -45,18 +56,31 @@ margin-right:auto;
 
 .space_{height:120px;width:120px;margin-top:20px;}
 
-#bottom{  border-color: #666666;
-    /*border-style: solid;
-    border-width: 1px 0;*/
-    clear: both;
+#bottom{border-color: #666666;
+    margin-top:10px;
     font-size: 0.85em;
-    margin-bottom: 3em;
-    float:bottom;}
+    background-color:#000000;
+    min-height:300px;
+    background:url("../images/footer.png");
+    border: 30px solid #black;
+    /*width:780px;
+    height:90px;
+    background:url("../images/content-menu.png") no-repeat;
+    padding-left:20px;
+    padding-right:20px;
+    border: 30px solid #black;
+    -moz-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;*/
+    }
 
+#texts{
+}
 
 table.list{border-bottom:2px solid #F99F43;border-left:2px solid #F99F43;border-right:2px solid #F99F43;border-top:2px solid #F99F43;}table.list th{border-bottom:2px solid #F99F43;border-left:2px solid #F99F43;}table.list tbody td,table.list tbody tr td{border-bottom:dotted 1px #F99F43;border-left:1px dotted #F99F43;border-right:1px dotted #F99F43;border-top:1px dotted #F99F43;font-size:11px;padding:7px 10px 7px 3px;}table.list thead th{border:1px solid #F99F43;font-size:12px;font-weight:normal;padding:0 3px 3px;}table.list thead th a{color:#F99F43;}table.list thead th a:hover{color:#F99F43;}table.list td{padding:11px 20px 20px 11px;border-top:1px solid #F99F43;border-right:1px solid #F99F43;}table.list ul{margin-top:10px;margin-bottom:10px;margin-left:0;padding-left:1em;}table.list li{margin-bottom:10px;}
 
-.pages_title{color:#CD0000;font:32px Verdana;position:absolute; margin-top:15px}
+.pages_title{color:#CD0000;font:32px Verdana;position:absolute; margin-top:20px}
 
 #linkdesign{position:absolute;top:20px; margin-left:260px; z-index:10;}
 
