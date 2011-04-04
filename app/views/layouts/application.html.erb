@@ -6,18 +6,14 @@
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
     <title>Am(a)dora - fall in love! </title>
     <%= stylesheet_link_tag "application" %>
-     <%= stylesheet_link_tag "" %>
     <%= csrf_meta_tag %>
-    <%#= javascript_include_tag 'prototype' %>
     <%= javascript_include_tag 'jquery/jquery-1.5.min' %>
-    <%#= javascript_include_tag :all, :cache => true %>
 
 <!--script src='http://www.google.com/jsapi'/>
 <script>
 google.load(&quot;jquery&quot;, &quot;1.3.2&quot;);
 </script-->
-<script type='text/javascript'>
-
+<!-- script type='text/javascript'>
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-21420364-5']);
   _gaq.push(['_trackPageview']);
@@ -43,11 +39,9 @@ jQuery(function()
     }
   );
 });
+</script-->
 
-</script>
-
-
-  </head>
+</head>
 
 <body>
   <div id=limit>
@@ -68,15 +62,15 @@ jQuery(function()
 
      <div id="content2">
         <div id="linkdesign" >
-           <a href="/design">   <img src="../images/link-design.png" border="0" alt="DESIGN" />  </a>
+           <a href="/design">   <img src="../images/link-design.png" onmouseover="this.src='../images/link-design-s.png'" onmouseout="this.src='../images/link-design.png'" border="0" alt="DESIGN" />  </a>
         </div>
 
         <div id="linkdev" >
-           <a href="/dev">   <img src="../images/link-dev.png" border="0" alt="DESENVOLVIMENTO" />  </a>
+           <a href="/dev">   <img src="../images/link-dev.png" onmouseover="this.src='../images/link-dev-s.png'" onmouseout="this.src='../images/link-dev.png'" border="0" alt="DESENVOLVIMENTO" />  </a>
         </div>
 
         <div id="linkaudiovideo" >
-           <a href="/audiovideo">   <img src="../images/link-audiovideo.png" border="0" alt="AUDIO E VÍDEO" />  </a>
+           <a href="/audiovideo">   <img src="../images/link-audiovideo.png" onmouseover="this.src='../images/link-audiovideo-s.png'" onmouseout="this.src='../images/link-audiovideo.png'" border="0" alt="AUDIO E VÍDEO" />  </a>
         </div>
 
         <div id="linktexts" >
@@ -93,18 +87,20 @@ jQuery(function()
       <div id="content">
         <%= yield %>
       </div>
-</div>
 
-      <div id="bottom">
-        <div id='texts' align="center">
-          <a href="http://validator.w3.org/check?uri=referer"> XHTML Válido</a> &nbsp; &nbsp; - &nbsp; &nbsp;
-
-          <a href="http://jigsaw.w3.org/css-validator/check/referer"> CSS Válido</a> &nbsp; &nbsp; - &nbsp; &nbsp;
-          CC - Copie com Carinho!
-            <a target="_blank" rel="license" href="http://creativecommons.org/licenses/by-nc/2.5/br/">  (veja mais) </a>
-        </div>
+      <div id="footer">
       </div>
 
-  </body>
+       <div id="footer-image">
+       </div>
+
+       <div id="texts">
+        <a href="http://validator.w3.org/check?uri=referer"> <img src="../images/linkxhtml.png" border="0" /> </a>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer"> <img src="../images/linkcss.png" border="0" /> </a>
+        <a target="_blank" rel="license" href="http://creativecommons.org/licenses/by-nc/2.5/br/">  <img src="../images/linkcc.png" border="0" /> </a>
+      </div>
+
+  </div>
+</body>
 </html>
 
