@@ -72,7 +72,7 @@ gem 'refinerycms-generators',   '~> 0.9'
 # Add i18n support (optional, you can remove this if you really want to).
 gem 'refinerycms-i18n',         '~> 0.9'
 
-#gem 'refinerycms-portfolio', '~> 0.9.9'
+gem 'refinerycms-portfolio', '~> 0.9.9'
 
 # END USER DEFINED
 
