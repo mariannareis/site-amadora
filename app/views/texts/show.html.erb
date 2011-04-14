@@ -1,0 +1,20 @@
+<h2 class="pages_title"> <%= @text.title %> </h2>
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @text.title %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @text.content %>
+</p>
+
+<% if refinery_user? %>
+<%= link_to 'Edit', edit_text_path(@text) %> |
+<% end %>
+
+<%= link_to 'Voltar', texts_path %>
+
