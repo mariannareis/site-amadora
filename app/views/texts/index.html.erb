@@ -1,21 +1,19 @@
-<h2 class="formatted_page_title"> Escritos... </h2>
+<h2 class="pages_title"> Escritos... </h2>
+  <br/>
 
   <% @texts.each do |text| %>
-  <p>
-      <h2><%= text.title %> (<%= text.created_at.month.to_s + "/" + text.created_at.year.to_s %>)</h2>
-      <ul><%= text.content[0..400] %></ul>
+    <h4><%= text.title %> (<%= text.created_at.month.to_s + "/" + text.created_at.year.to_s %>)</h4>
+
+    <ul><%= text.content[0..400] %> ... </ul>
+
       <p align='right'>
       <%= link_to 'Leia Mais', text %>
       <% if refinery_user? %>
         <%= link_to 'Editar', edit_text_path(text) %>
-        <%= link_to('Destroy', text, :method => :delete, :confirm => 'Are you sure?') %>
+        <%= link_to('Apagar', text, :method => :delete, :confirm => 'Are you sure?') %>
       <%end%>
       </p>
-    </tr>
-
   <% end %>
-
-  </table>
 
 <br />
 

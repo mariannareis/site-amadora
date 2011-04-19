@@ -3,9 +3,10 @@ class TextsController < ApplicationController
   before_filter :authenticated_users_only, :only => [:new, :edit, :update, :create, :destroy]
 
   def authenticated_users_only
-    unless refinery_user?
+    if not user_signed_in?
+      puts user_signed_in?.to_s
       @texts = Text.all
-      render :action => "texts/index"
+      redirect_to :action => 'index'
     end
   end
 

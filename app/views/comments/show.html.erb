@@ -1,0 +1,28 @@
+<br/>
+
+<p id="notice"><center><font color='red'><%= notice %></center></font></p>
+
+<p>
+  <b>Nome:</b>
+  <%= @comment.name %>
+</p>
+
+<p>
+  <b>E-mail:</b>
+  <%= @comment.email %>
+</p>
+
+<p>
+  <% if @comment.site != '' %>
+    <b>Site:</b> <%= @comment.site %>
+  <% end %>
+</p>
+
+<p>
+  <b>Comment:</b>
+  <%= @comment.comment %>
+</p>
+
+<%= link_to 'Apagar', @comment, :confirm => 'Tem certeza?', :method => :delete %> |
+<%= link_to 'Voltar', :controller => 'texts', :action => 'show', :id => @comment.text %>
+

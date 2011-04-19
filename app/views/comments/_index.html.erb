@@ -1,0 +1,39 @@
+<h4>COMENTÁRIOS (<%= text.comments.size %>)
+
+<% if text.comments.size != 0 %>
+  - alguns não aprovados ainda - <%= link_to 'Comente também! xD', new_comment_path(:text => text) %></h4>
+  <p align='justify'>
+  <% text.comments.each do |comment| %>
+    <% if not refinery_user? %>
+      <% if (comment.approved == 1)  %>
+        <div id='each_comment'>
+          De: <%= comment.name %> - <%= comment.site %> <br/>
+          <%= comment.comment %><br/>
+        </div>
+      <% end %>
+    <% else %>
+      <div id='each_comment'>
+        De: <%= comment.name %> - <%= comment.site %> <br/>
+        <%= comment.comment %><br/>
+        <br/>
+        <%= comment.approved %>
+        <% if comment.approved == nil %>
+          <%= link_to 'Aprovar', :controller => 'comments', :action => 'approve_comment', :comment => comment.id %>
+        <% else %>
+          <%= link_to 'Desaprovar', :controller => :comments, :action => :unapprove_comment, :comment => comment.id %>
+        <% end %>
+      </div>
+    <% end %>
+  <% end %>
+  </p>
+<% else %>
+  Nenhum comentário ainda =( <br/>
+  <%= link_to 'Seja o primeiro! xD', new_comment_path(:text => text) %> </h4>
+<% end %>
+
+<br/>
+
+        <%#= link_to 'Show', comment %>
+        <%#= link_to 'Edit', edit_comment_path(comment) %>
+        <%#= link_to 'Destroy', comment, :confirm => 'Are you sure?', :method => :delete %>
+

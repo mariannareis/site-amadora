@@ -1,20 +1,21 @@
-<h2 class="pages_title"> <%= @text.title %> </h2>
-
+<h2 class="pages_title"> Escritos...</h2>
+<br/>
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Title:</b>
-  <%= @text.title %>
+
+  <h3><%= @text.title %></h3>
 </p>
 
-<p>
-  <b>Content:</b>
+<p align='left'>
   <%= @text.content %>
 </p>
 
 <% if refinery_user? %>
-<%= link_to 'Edit', edit_text_path(@text) %> |
+<%= link_to 'Editar', edit_text_path(@text) %> |
 <% end %>
+
+<%= render :partial => 'comments/index', :locals => {:text => @text} %>
 
 <%= link_to 'Voltar', texts_path %>
 

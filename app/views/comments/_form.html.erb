@@ -1,0 +1,35 @@
+<%= form_for(@comment) do |f| %>
+  <% if @comment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@comment.errors.count, "erro") %> impedem de salvar o comentário!</h2>
+
+      <ul>
+      <% @comment.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    Nome: * <br/> <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    E-mail: * <br/> <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    Site: <br/> <%= f.text_field :site %>
+  </div>
+  <div class="field">
+    Seu comentário: * <br/> <%= f.text_area :comment, :size => '90x12' %>
+  </div>
+    <%= f.hidden_field :text, :value => @text.id %>
+
+  <br/>  <br/>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+<br/><br/>
+<%= link_to 'Voltar', :controller => 'texts', :action => 'show', :id => @text.id %>
+
