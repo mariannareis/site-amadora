@@ -1,10 +1,16 @@
 SiteAmadora::Application.routes.draw do
+  get "portfolio/what"
+
   resources :comments
 
   resources :texts
 
   match 'comments/approve_comment'
   match 'comments/unapprove_comment'
+
+  resources :portfolio
+  match 'portfolio/:id' => 'portfolio#view'
+  match 'portfolio/what/:id' => 'portfolio#view'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

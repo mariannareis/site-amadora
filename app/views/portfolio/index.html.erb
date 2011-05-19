@@ -1,0 +1,16 @@
+<h2 class="pages_title"> Portfólio </h2>
+
+<br/>
+
+<% if @photos[@id+1] != nil %>
+<%= link_to '>>', :action => 'show', :id => @id+1 %> <br/>
+<% end %>
+<p>
+  <center>
+    <img src=<%= @photo %> height='500', width='500'>
+    <br/>~~ <i>Foto: <%= @photo_title %></i> ~~ <br/>
+  </center>
+  <br/>
+
+</p>
+
