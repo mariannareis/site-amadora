@@ -121,7 +121,7 @@ GEM
       thor (~> 0.14.4)
     rake (0.8.7)
     rdoc (3.5.3)
-    refinerycms (0.9.9)
+    #refinerycms (0.9.9)
       acts_as_indexed (~> 0.6.6)
       bundler (~> 1.0.5)
       devise (~> 1.1)
@@ -134,9 +134,9 @@ GEM
       rdoc (>= 2.5.11)
       truncate_html (~> 0.5)
       will_paginate (~> 3.0.pre)
-    refinerycms-generators (0.9.9.3)
-    refinerycms-i18n (0.9.9.7)
-      refinerycms (>= 0.9.8)
+    #refinerycms-generators (0.9.9.3)
+    #refinerycms-i18n (0.9.9.7)
+      #refinerycms (>= 0.9.8)
       routing-filter (>= 0.2.3)
     routing-filter (0.2.3)
       actionpack
@@ -193,10 +193,11 @@ DEPENDENCIES
   launchy
   rack-test (~> 0.5.6)
   rails (= 3.0.3)
-  refinerycms (= 0.9.9)
-  refinerycms-generators (~> 0.9)
-  refinerycms-i18n (~> 0.9)
+  #refinerycms (= 0.9.9)
+  #refinerycms-generators (~> 0.9)
+  #refinerycms-i18n (~> 0.9)
   rspec-rails (= 2.3)
   ruby-prof
   spork
   sqlite3-ruby
+
