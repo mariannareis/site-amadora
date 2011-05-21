@@ -2,17 +2,19 @@ class TextsController < ApplicationController
 
   before_filter :authenticated_users_only, :only => [:new, :edit, :update, :create, :destroy]
 
-    def rss
+def feeds
+
+
       @pages = Page.find(:all, :order => "id DESC", :limit => 10)
       render :layout => false
       response.headers["Content-Type"] = "application/xml; charset=utf-8"
-    end
 
     respond_to do |format|
       format.html
       format.rss { render :layout => false } #index.rss.builder
     end
 
+end
 
 
   def authenticated_users_only
@@ -24,6 +26,7 @@ class TextsController < ApplicationController
   end
 
   def index
+
     @texts = Text.all
 
     respond_to do |format|
