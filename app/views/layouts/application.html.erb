@@ -32,8 +32,7 @@
 
      <div id="content2">
         <div id="linkdesign" >
-  <%= link_to '.', :controller => 'portfolio', :action => 'what', :id => '0' %>   <img src="../images/link-design.png" onmouseover="this.src='../images/link-design-s.png'" onmouseout="this.src='../images/link-design.png'" border="0" alt="DESIGN" />  </a>
-        </div>
+       <%= link_to image_tag("link-design.png", :onmouseover=>"this.src='../images/link-design-s.png'", :onmouseout=>"this.src='../images/link-design.png'",), :controller => 'portfolio', :action => 'what', :id => '0' %>     </div>
 
         <div id="linkdev" >
            <a href="/dev">   <img src="../images/link-dev.png" onmouseover="this.src='../images/link-dev-s.png'" onmouseout="this.src='../images/link-dev.png'" border="0" alt="DESENVOLVIMENTO" />  </a>
