@@ -73,7 +73,7 @@ gem 'refinerycms-generators',   '~> 0.9'
 gem 'refinerycms-i18n',         '~> 0.9'
 # Flickr
 gem 'flickraw'
-#gem 'refinerycms-portfolio', '~> 0.9.9'
+gem 'refinerycms-portfolio', '~> 0.9.9'
 
 # END USER DEFINED
 
